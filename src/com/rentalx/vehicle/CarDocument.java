@@ -15,9 +15,6 @@ public class CarDocument {
 	private Long id;
 	
 	private String licencePlate;
-	private String model;
-	private String brand;
-	private Integer carYear;
 	private Integer docYear;
 	
 	

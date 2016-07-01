@@ -8,5 +8,9 @@ import lombok.Data;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 public class Supplier extends Account{
-
+		
+	public Supplier(String name, ContactInfo contactInfo) {
+		super(name, contactInfo);
+	}
+	
 }

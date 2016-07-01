@@ -17,6 +17,7 @@ public class Customer extends Account {
 	private List<PersonalDocument> documents;
 	
 	public Customer(){
+		super();
 		documents = new ArrayList<PersonalDocument>();
 	}
 

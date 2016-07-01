@@ -1,5 +1,6 @@
 package com.rentalx.account;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToOne;
+
+import org.hibernate.annotations.Cascade;
 
 import lombok.Data;
 
@@ -22,6 +25,16 @@ public abstract class Account {
 	
 	private String name;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private ContactInfo contactInfo;
+	
+	public Account(){
+		
+	}
+
+	public Account(String name, ContactInfo contactInfo) {
+		super();
+		this.name = name;
+		this.contactInfo = contactInfo;
+	}
 }

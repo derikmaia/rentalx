@@ -24,4 +24,8 @@ public class ContactInfo {
 	private String phone;
 	private String mobilePhone;
 	
+	public ContactInfo(String street, String city){
+		this.street = street;
+		this.city = city;
+	}
 }
