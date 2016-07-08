@@ -17199,3 +17199,501 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 01/07/2016 12:05:11.960 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: drop table if exists Traffic
 01/07/2016 12:05:11.960 [ERROR][hbm2ddl.SchemaExport] Cannot delete or update a parent row: a foreign key constraint fails
 01/07/2016 12:05:11.960 [INFO][hbm2ddl.SchemaExport] HHH000230: Schema export complete
+08/07/2016 08:34:02.897 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:34:03.116 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:34:03.146 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@6adede5: startup date [Fri Jul 08 08:34:03 BRT 2016]; root of context hierarchy
+08/07/2016 08:34:03.334 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:34:03.361 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:34:03.433 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:34:03.437 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:34:03.439 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:34:03.440 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:34:03.454 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:34:03.548 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:34:03.920 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:34:04.039 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:34:04.042 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:34:04.069 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:34:04.248 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:34:04.263 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:34:04.368 [INFO][hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+08/07/2016 08:34:04.379 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Account drop foreign key FK_ad7e8k0810n39bdw46rq2m8ue
+08/07/2016 08:34:04.379 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.account' doesn't exist
+08/07/2016 08:34:04.380 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer drop foreign key FK_ncsqu0mq8fmfoi1wuh7wxs0jx
+08/07/2016 08:34:04.380 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer' doesn't exist
+08/07/2016 08:34:04.381 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer_PersonalDocument drop foreign key FK_iend9xkrskd1cmy7e4vhmvgbk
+08/07/2016 08:34:04.381 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer_personaldocument' doesn't exist
+08/07/2016 08:34:04.381 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer_PersonalDocument drop foreign key FK_sxt1r82q58rudidxl9r9adr7j
+08/07/2016 08:34:04.381 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer_personaldocument' doesn't exist
+08/07/2016 08:34:04.382 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization drop foreign key FK_g83adu2xkj5wiuecnllo06402
+08/07/2016 08:34:04.382 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization' doesn't exist
+08/07/2016 08:34:04.383 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Car drop foreign key FK_i092kxm86oesjpbhlyc17tvv0
+08/07/2016 08:34:04.383 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_car' doesn't exist
+08/07/2016 08:34:04.384 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Car drop foreign key FK_acxo6feumsq19qrr6i5yj6ypx
+08/07/2016 08:34:04.384 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_car' doesn't exist
+08/07/2016 08:34:04.385 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Rental drop foreign key FK_br197ubk68e646ituts3isb6k
+08/07/2016 08:34:04.385 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_rental' doesn't exist
+08/07/2016 08:34:04.386 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Rental drop foreign key FK_91l32v42eammb81dkqb33undy
+08/07/2016 08:34:04.386 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_rental' doesn't exist
+08/07/2016 08:34:04.386 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Supplier drop foreign key FK_5k406afvt6a6s7s1nunfynlmv
+08/07/2016 08:34:04.387 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_supplier' doesn't exist
+08/07/2016 08:34:04.387 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Supplier drop foreign key FK_old49hc2bljolaiqo3igyf97g
+08/07/2016 08:34:04.387 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_supplier' doesn't exist
+08/07/2016 08:34:04.388 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Rental drop foreign key FK_x2jr4ufrannouhfkaf81devw
+08/07/2016 08:34:04.388 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.rental' doesn't exist
+08/07/2016 08:34:04.389 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Rental drop foreign key FK_97y8fkheeyb97s0wss3mub8qi
+08/07/2016 08:34:04.389 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.rental' doesn't exist
+08/07/2016 08:34:04.389 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Supplier drop foreign key FK_oh51xhcp4bl4trivu5ydmv1c7
+08/07/2016 08:34:04.389 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.supplier' doesn't exist
+08/07/2016 08:34:04.683 [INFO][hbm2ddl.SchemaExport] HHH000230: Schema export complete
+08/07/2016 08:34:05.251 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@6adede5: startup date [Fri Jul 08 08:34:03 BRT 2016]; root of context hierarchy
+08/07/2016 08:34:05.253 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:34:05.253 [INFO][hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+08/07/2016 08:34:05.340 [INFO][hbm2ddl.SchemaExport] HHH000230: Schema export complete
+08/07/2016 08:36:44.260 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:36:44.461 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:36:44.491 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:36:44 BRT 2016]; root of context hierarchy
+08/07/2016 08:36:44.680 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:36:44.705 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:36:44.776 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:36:44.781 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:36:44.782 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:36:44.783 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:36:44.798 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:36:44.892 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:36:45.192 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:36:45.306 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:36:45.309 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:36:45.335 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:36:45.515 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:36:45.530 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:36:45.533 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.vehicle.Car (class must be instantiated by Interceptor)
+08/07/2016 08:36:45.621 [INFO][hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+08/07/2016 08:36:45.631 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Account drop foreign key FK_ad7e8k0810n39bdw46rq2m8ue
+08/07/2016 08:36:45.631 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.account' doesn't exist
+08/07/2016 08:36:45.632 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_CarDocument drop foreign key FK_fv5xha5a1hdbqa2owrlbysan2
+08/07/2016 08:36:45.632 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_cardocument' doesn't exist
+08/07/2016 08:36:45.633 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_CarDocument drop foreign key FK_oq7wpdybfi8b0hn1vpl3kjrr6
+08/07/2016 08:36:45.633 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_cardocument' doesn't exist
+08/07/2016 08:36:45.634 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_Maintenance drop foreign key FK_5rhwjcbagtqfsmi67f7e4qihq
+08/07/2016 08:36:45.634 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_maintenance' doesn't exist
+08/07/2016 08:36:45.634 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_Maintenance drop foreign key FK_nxrwjjcdm51eqc394w3odrech
+08/07/2016 08:36:45.635 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_maintenance' doesn't exist
+08/07/2016 08:36:45.635 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_Traffic drop foreign key FK_ombonpsjko027jjuh99s1ilpg
+08/07/2016 08:36:45.635 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_traffic' doesn't exist
+08/07/2016 08:36:45.636 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Car_Traffic drop foreign key FK_8tnj2gdy8iiokopuqskxnl11q
+08/07/2016 08:36:45.636 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.car_traffic' doesn't exist
+08/07/2016 08:36:45.636 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer drop foreign key FK_ncsqu0mq8fmfoi1wuh7wxs0jx
+08/07/2016 08:36:45.636 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer' doesn't exist
+08/07/2016 08:36:45.637 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer_PersonalDocument drop foreign key FK_iend9xkrskd1cmy7e4vhmvgbk
+08/07/2016 08:36:45.637 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer_personaldocument' doesn't exist
+08/07/2016 08:36:45.638 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Customer_PersonalDocument drop foreign key FK_sxt1r82q58rudidxl9r9adr7j
+08/07/2016 08:36:45.638 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.customer_personaldocument' doesn't exist
+08/07/2016 08:36:45.638 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization drop foreign key FK_g83adu2xkj5wiuecnllo06402
+08/07/2016 08:36:45.638 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization' doesn't exist
+08/07/2016 08:36:45.639 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Car drop foreign key FK_i092kxm86oesjpbhlyc17tvv0
+08/07/2016 08:36:45.639 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_car' doesn't exist
+08/07/2016 08:36:45.639 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Car drop foreign key FK_acxo6feumsq19qrr6i5yj6ypx
+08/07/2016 08:36:45.639 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_car' doesn't exist
+08/07/2016 08:36:45.640 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Rental drop foreign key FK_br197ubk68e646ituts3isb6k
+08/07/2016 08:36:45.640 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_rental' doesn't exist
+08/07/2016 08:36:45.640 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Rental drop foreign key FK_91l32v42eammb81dkqb33undy
+08/07/2016 08:36:45.641 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_rental' doesn't exist
+08/07/2016 08:36:45.641 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Supplier drop foreign key FK_5k406afvt6a6s7s1nunfynlmv
+08/07/2016 08:36:45.642 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_supplier' doesn't exist
+08/07/2016 08:36:45.643 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Organization_Supplier drop foreign key FK_old49hc2bljolaiqo3igyf97g
+08/07/2016 08:36:45.643 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.organization_supplier' doesn't exist
+08/07/2016 08:36:45.644 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Rental drop foreign key FK_x2jr4ufrannouhfkaf81devw
+08/07/2016 08:36:45.644 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.rental' doesn't exist
+08/07/2016 08:36:45.644 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Rental drop foreign key FK_97y8fkheeyb97s0wss3mub8qi
+08/07/2016 08:36:45.644 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.rental' doesn't exist
+08/07/2016 08:36:45.645 [ERROR][hbm2ddl.SchemaExport] HHH000389: Unsuccessful: alter table Supplier drop foreign key FK_oh51xhcp4bl4trivu5ydmv1c7
+08/07/2016 08:36:45.645 [ERROR][hbm2ddl.SchemaExport] Table 'rentalx.supplier' doesn't exist
+08/07/2016 08:36:46.072 [INFO][hbm2ddl.SchemaExport] HHH000230: Schema export complete
+08/07/2016 08:36:46.744 [INFO][internal.AbstractBatchImpl] HHH000010: On release of batch it still contained JDBC statements
+08/07/2016 08:36:46.750 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:36:44 BRT 2016]; root of context hierarchy
+08/07/2016 08:36:46.752 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:36:46.752 [INFO][hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+08/07/2016 08:36:46.865 [INFO][hbm2ddl.SchemaExport] HHH000230: Schema export complete
+08/07/2016 08:39:38.963 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:39:39.172 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:39:39.202 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:39:39 BRT 2016]; root of context hierarchy
+08/07/2016 08:39:39.394 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:39:39.420 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:39:39.491 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:39:39.495 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:39:39.497 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:39:39.498 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:39:39.512 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:39:39.606 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:39:39.981 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:39:40.099 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:39:40.102 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:39:40.132 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:39:40.323 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:39:40.337 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:39:40.342 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.vehicle.Car (class must be instantiated by Interceptor)
+08/07/2016 08:39:40.468 [INFO][hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+08/07/2016 08:39:40.469 [INFO][hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+08/07/2016 08:39:40.471 [INFO][hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+08/07/2016 08:39:40.474 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Account
+08/07/2016 08:39:40.476 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car
+08/07/2016 08:39:40.476 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: CarDocument
+08/07/2016 08:39:40.477 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_CarDocument
+08/07/2016 08:39:40.477 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Maintenance
+08/07/2016 08:39:40.478 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Traffic
+08/07/2016 08:39:40.478 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: ContactInfo
+08/07/2016 08:39:40.479 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer
+08/07/2016 08:39:40.480 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer_PersonalDocument
+08/07/2016 08:39:40.481 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Maintenance
+08/07/2016 08:39:40.481 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization
+08/07/2016 08:39:40.482 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Car
+08/07/2016 08:39:40.482 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Rental
+08/07/2016 08:39:40.483 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Supplier
+08/07/2016 08:39:40.483 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: PersonalDocument
+08/07/2016 08:39:40.484 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Rental
+08/07/2016 08:39:40.484 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+08/07/2016 08:39:40.486 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Traffic
+08/07/2016 08:39:40.486 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Account
+08/07/2016 08:39:40.487 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car
+08/07/2016 08:39:40.487 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: CarDocument
+08/07/2016 08:39:40.488 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_CarDocument
+08/07/2016 08:39:40.489 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Maintenance
+08/07/2016 08:39:40.489 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Traffic
+08/07/2016 08:39:40.489 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: ContactInfo
+08/07/2016 08:39:40.490 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer
+08/07/2016 08:39:40.490 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer_PersonalDocument
+08/07/2016 08:39:40.491 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Maintenance
+08/07/2016 08:39:40.492 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization
+08/07/2016 08:39:40.492 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Car
+08/07/2016 08:39:40.493 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Rental
+08/07/2016 08:39:40.493 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Supplier
+08/07/2016 08:39:40.494 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: PersonalDocument
+08/07/2016 08:39:40.494 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Rental
+08/07/2016 08:39:40.494 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+08/07/2016 08:39:40.495 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Traffic
+08/07/2016 08:39:40.495 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Account
+08/07/2016 08:39:40.496 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car
+08/07/2016 08:39:40.497 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: CarDocument
+08/07/2016 08:39:40.497 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_CarDocument
+08/07/2016 08:39:40.498 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Maintenance
+08/07/2016 08:39:40.498 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Car_Traffic
+08/07/2016 08:39:40.498 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: ContactInfo
+08/07/2016 08:39:40.499 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer
+08/07/2016 08:39:40.499 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Customer_PersonalDocument
+08/07/2016 08:39:40.500 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Maintenance
+08/07/2016 08:39:40.500 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization
+08/07/2016 08:39:40.501 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Car
+08/07/2016 08:39:40.501 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Rental
+08/07/2016 08:39:40.502 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Organization_Supplier
+08/07/2016 08:39:40.503 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: PersonalDocument
+08/07/2016 08:39:40.503 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Rental
+08/07/2016 08:39:40.503 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Supplier
+08/07/2016 08:39:40.504 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: Traffic
+08/07/2016 08:39:40.895 [INFO][hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+08/07/2016 08:39:41.497 [INFO][internal.AbstractBatchImpl] HHH000010: On release of batch it still contained JDBC statements
+08/07/2016 08:39:41.502 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:39:39 BRT 2016]; root of context hierarchy
+08/07/2016 08:39:41.503 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:47:36.454 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:47:36.641 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:47:36.670 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:47:36 BRT 2016]; root of context hierarchy
+08/07/2016 08:47:36.857 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:47:36.882 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:47:36.953 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:47:36.957 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:47:36.959 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:47:36.960 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:47:36.974 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:47:37.069 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:47:37.366 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:47:37.480 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:47:37.484 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:47:37.510 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:47:37.690 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:47:37.704 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:47:37.707 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.vehicle.Car (class must be instantiated by Interceptor)
+08/07/2016 08:47:37.791 [INFO][hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+08/07/2016 08:47:37.791 [INFO][hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+08/07/2016 08:47:37.793 [INFO][hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+08/07/2016 08:47:37.811 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.account
+08/07/2016 08:47:37.811 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, contactinfo_id]
+08/07/2016 08:47:37.811 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ad7e8k0810n39bdw46rq2m8ue]
+08/07/2016 08:47:37.811 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ad7e8k0810n39bdw46rq2m8ue, primary]
+08/07/2016 08:47:37.819 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car
+08/07/2016 08:47:37.819 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [model, id, caryear, brand]
+08/07/2016 08:47:37.819 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.819 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.827 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.cardocument
+08/07/2016 08:47:37.827 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [docyear, licenceplate, id]
+08/07/2016 08:47:37.827 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.827 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.836 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_cardocument
+08/07/2016 08:47:37.836 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [cardocumentlist_id, car_id]
+08/07/2016 08:47:37.836 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:47:37.836 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, uk_fv5xha5a1hdbqa2owrlbysan2, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:47:37.845 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_maintenance
+08/07/2016 08:47:37.845 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [maintenancelist_id, car_id]
+08/07/2016 08:47:37.845 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_nxrwjjcdm51eqc394w3odrech, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:47:37.845 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_nxrwjjcdm51eqc394w3odrech, uk_5rhwjcbagtqfsmi67f7e4qihq, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:47:37.855 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_traffic
+08/07/2016 08:47:37.855 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [trafficlist_id, car_id]
+08/07/2016 08:47:37.855 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:47:37.855 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_ombonpsjko027jjuh99s1ilpg, fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:47:37.863 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.contactinfo
+08/07/2016 08:47:37.863 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [country, city, phone, street, mobilephone, county, streetnumber, id, complement]
+08/07/2016 08:47:37.863 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.863 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.870 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer
+08/07/2016 08:47:37.870 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:37.870 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx]
+08/07/2016 08:47:37.871 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx, primary]
+08/07/2016 08:47:37.878 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer_personaldocument
+08/07/2016 08:47:37.879 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [customer_id, documents_id]
+08/07/2016 08:47:37.879 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:47:37.879 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_iend9xkrskd1cmy7e4vhmvgbk, fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:47:37.886 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.maintenance
+08/07/2016 08:47:37.886 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:37.886 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.886 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.893 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization
+08/07/2016 08:47:37.893 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:37.894 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_g83adu2xkj5wiuecnllo06402]
+08/07/2016 08:47:37.894 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_g83adu2xkj5wiuecnllo06402, primary]
+08/07/2016 08:47:37.901 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_car
+08/07/2016 08:47:37.901 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, carlist_id]
+08/07/2016 08:47:37.902 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:47:37.902 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_i092kxm86oesjpbhlyc17tvv0, fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:47:37.909 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_rental
+08/07/2016 08:47:37.909 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, rentallist_id]
+08/07/2016 08:47:37.909 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:47:37.909 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_br197ubk68e646ituts3isb6k, uk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:47:37.917 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_supplier
+08/07/2016 08:47:37.917 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [supplierlist_id, organization_id]
+08/07/2016 08:47:37.917 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:47:37.917 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv, uk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:47:37.923 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.personaldocument
+08/07/2016 08:47:37.924 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, expirationdate, docnumber]
+08/07/2016 08:47:37.924 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.924 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.930 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.rental
+08/07/2016 08:47:37.930 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, customer_id, car_id]
+08/07/2016 08:47:37.930 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw]
+08/07/2016 08:47:37.930 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw, primary]
+08/07/2016 08:47:37.936 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.supplier
+08/07/2016 08:47:37.937 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:37.937 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oh51xhcp4bl4trivu5ydmv1c7]
+08/07/2016 08:47:37.937 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oh51xhcp4bl4trivu5ydmv1c7, primary]
+08/07/2016 08:47:37.942 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.traffic
+08/07/2016 08:47:37.943 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:37.943 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:37.943 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:37.944 [INFO][hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+08/07/2016 08:47:38.564 [INFO][internal.AbstractBatchImpl] HHH000010: On release of batch it still contained JDBC statements
+08/07/2016 08:47:38.569 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:47:36 BRT 2016]; root of context hierarchy
+08/07/2016 08:47:38.570 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:47:53.571 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:47:53.784 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:47:53.821 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@5cee5251: startup date [Fri Jul 08 08:47:53 BRT 2016]; root of context hierarchy
+08/07/2016 08:47:54.059 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:47:54.082 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:47:54.172 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:47:54.178 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:47:54.180 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:47:54.181 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:47:54.199 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:47:54.319 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:47:54.642 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:47:54.788 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:47:54.792 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:47:54.825 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:47:55.053 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:47:55.072 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:47:55.076 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.vehicle.Car (class must be instantiated by Interceptor)
+08/07/2016 08:47:55.183 [INFO][hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+08/07/2016 08:47:55.184 [INFO][hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+08/07/2016 08:47:55.186 [INFO][hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+08/07/2016 08:47:55.206 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.account
+08/07/2016 08:47:55.206 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, contactinfo_id]
+08/07/2016 08:47:55.206 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ad7e8k0810n39bdw46rq2m8ue]
+08/07/2016 08:47:55.206 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ad7e8k0810n39bdw46rq2m8ue, primary]
+08/07/2016 08:47:55.214 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car
+08/07/2016 08:47:55.214 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [model, id, caryear, brand]
+08/07/2016 08:47:55.214 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.214 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.221 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.cardocument
+08/07/2016 08:47:55.221 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [docyear, licenceplate, id]
+08/07/2016 08:47:55.221 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.222 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.230 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_cardocument
+08/07/2016 08:47:55.230 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [cardocumentlist_id, car_id]
+08/07/2016 08:47:55.230 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:47:55.230 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, uk_fv5xha5a1hdbqa2owrlbysan2, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:47:55.237 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_maintenance
+08/07/2016 08:47:55.237 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [maintenancelist_id, car_id]
+08/07/2016 08:47:55.237 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_nxrwjjcdm51eqc394w3odrech, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:47:55.237 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_nxrwjjcdm51eqc394w3odrech, uk_5rhwjcbagtqfsmi67f7e4qihq, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:47:55.244 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_traffic
+08/07/2016 08:47:55.245 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [trafficlist_id, car_id]
+08/07/2016 08:47:55.245 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:47:55.245 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_ombonpsjko027jjuh99s1ilpg, fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:47:55.252 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.contactinfo
+08/07/2016 08:47:55.252 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [country, city, phone, street, mobilephone, county, streetnumber, id, complement]
+08/07/2016 08:47:55.252 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.252 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.259 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer
+08/07/2016 08:47:55.259 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:55.259 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx]
+08/07/2016 08:47:55.260 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx, primary]
+08/07/2016 08:47:55.267 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer_personaldocument
+08/07/2016 08:47:55.267 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [customer_id, documents_id]
+08/07/2016 08:47:55.267 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:47:55.267 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_iend9xkrskd1cmy7e4vhmvgbk, fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:47:55.274 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.maintenance
+08/07/2016 08:47:55.274 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:55.274 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.274 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.281 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization
+08/07/2016 08:47:55.281 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:55.281 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_g83adu2xkj5wiuecnllo06402]
+08/07/2016 08:47:55.281 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_g83adu2xkj5wiuecnllo06402, primary]
+08/07/2016 08:47:55.288 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_car
+08/07/2016 08:47:55.288 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, carlist_id]
+08/07/2016 08:47:55.288 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:47:55.288 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_i092kxm86oesjpbhlyc17tvv0, fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:47:55.295 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_rental
+08/07/2016 08:47:55.295 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, rentallist_id]
+08/07/2016 08:47:55.295 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:47:55.295 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_br197ubk68e646ituts3isb6k, uk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:47:55.301 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_supplier
+08/07/2016 08:47:55.302 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [supplierlist_id, organization_id]
+08/07/2016 08:47:55.302 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:47:55.302 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv, uk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:47:55.308 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.personaldocument
+08/07/2016 08:47:55.308 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, expirationdate, docnumber]
+08/07/2016 08:47:55.308 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.308 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.315 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.rental
+08/07/2016 08:47:55.315 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, customer_id, car_id]
+08/07/2016 08:47:55.315 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw]
+08/07/2016 08:47:55.315 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw, primary]
+08/07/2016 08:47:55.321 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.supplier
+08/07/2016 08:47:55.322 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:55.322 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oh51xhcp4bl4trivu5ydmv1c7]
+08/07/2016 08:47:55.322 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oh51xhcp4bl4trivu5ydmv1c7, primary]
+08/07/2016 08:47:55.328 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.traffic
+08/07/2016 08:47:55.328 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:47:55.328 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:47:55.328 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:47:55.329 [INFO][hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+08/07/2016 08:48:28.591 [INFO][internal.AbstractBatchImpl] HHH000010: On release of batch it still contained JDBC statements
+08/07/2016 08:48:40.749 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@5cee5251: startup date [Fri Jul 08 08:47:53 BRT 2016]; root of context hierarchy
+08/07/2016 08:48:40.751 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:49:53.802 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context.xml]
+08/07/2016 08:49:54.009 [INFO][xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:WebContent/WEB-INF/application-context-db.xml]
+08/07/2016 08:49:54.048 [INFO][support.GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:49:54 BRT 2016]; root of context hierarchy
+08/07/2016 08:49:54.244 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'rentalXPU'
+08/07/2016 08:49:54.269 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+08/07/2016 08:49:54.341 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+08/07/2016 08:49:54.345 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+08/07/2016 08:49:54.347 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+08/07/2016 08:49:54.348 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+08/07/2016 08:49:54.362 [INFO][ejb.Ejb3Configuration] HHH000204: Processing PersistenceUnitInfo [
+	name: rentalXPU
+	...]
+08/07/2016 08:49:54.455 [INFO][internal.ConnectionProviderInitiator] HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+08/07/2016 08:49:54.755 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08/07/2016 08:49:54.869 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+08/07/2016 08:49:54.873 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+08/07/2016 08:49:54.899 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+08/07/2016 08:49:55.078 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.ContactInfo (class must be instantiated by Interceptor)
+08/07/2016 08:49:55.093 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.account.Supplier (class must be instantiated by Interceptor)
+08/07/2016 08:49:55.096 [INFO][tuple.PojoInstantiator] HHH000182: No default (no-argument) constructor for class: com.rentalx.vehicle.Car (class must be instantiated by Interceptor)
+08/07/2016 08:49:55.184 [INFO][hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+08/07/2016 08:49:55.184 [INFO][hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+08/07/2016 08:49:55.185 [INFO][hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+08/07/2016 08:49:55.203 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.account
+08/07/2016 08:49:55.203 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [name, id, contactinfo_id]
+08/07/2016 08:49:55.203 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ad7e8k0810n39bdw46rq2m8ue]
+08/07/2016 08:49:55.203 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ad7e8k0810n39bdw46rq2m8ue, primary]
+08/07/2016 08:49:55.211 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car
+08/07/2016 08:49:55.211 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [model, id, caryear, brand]
+08/07/2016 08:49:55.211 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.211 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.219 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.cardocument
+08/07/2016 08:49:55.219 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [docyear, licenceplate, id]
+08/07/2016 08:49:55.219 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.220 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.228 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_cardocument
+08/07/2016 08:49:55.228 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [cardocumentlist_id, car_id]
+08/07/2016 08:49:55.228 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:49:55.228 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oq7wpdybfi8b0hn1vpl3kjrr6, uk_fv5xha5a1hdbqa2owrlbysan2, fk_fv5xha5a1hdbqa2owrlbysan2]
+08/07/2016 08:49:55.236 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_maintenance
+08/07/2016 08:49:55.236 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [maintenancelist_id, car_id]
+08/07/2016 08:49:55.236 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_nxrwjjcdm51eqc394w3odrech, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:49:55.236 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_nxrwjjcdm51eqc394w3odrech, uk_5rhwjcbagtqfsmi67f7e4qihq, fk_5rhwjcbagtqfsmi67f7e4qihq]
+08/07/2016 08:49:55.244 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.car_traffic
+08/07/2016 08:49:55.244 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [trafficlist_id, car_id]
+08/07/2016 08:49:55.244 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:49:55.244 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_ombonpsjko027jjuh99s1ilpg, fk_ombonpsjko027jjuh99s1ilpg, fk_8tnj2gdy8iiokopuqskxnl11q]
+08/07/2016 08:49:55.252 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.contactinfo
+08/07/2016 08:49:55.252 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [country, city, phone, street, mobilephone, county, streetnumber, id, complement]
+08/07/2016 08:49:55.252 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.252 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.260 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer
+08/07/2016 08:49:55.260 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:49:55.260 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx]
+08/07/2016 08:49:55.260 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_ncsqu0mq8fmfoi1wuh7wxs0jx, primary]
+08/07/2016 08:49:55.267 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.customer_personaldocument
+08/07/2016 08:49:55.267 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [customer_id, documents_id]
+08/07/2016 08:49:55.267 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:49:55.267 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_iend9xkrskd1cmy7e4vhmvgbk, fk_sxt1r82q58rudidxl9r9adr7j, fk_iend9xkrskd1cmy7e4vhmvgbk]
+08/07/2016 08:49:55.275 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.maintenance
+08/07/2016 08:49:55.275 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:49:55.276 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.276 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.283 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization
+08/07/2016 08:49:55.283 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:49:55.283 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_g83adu2xkj5wiuecnllo06402]
+08/07/2016 08:49:55.284 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_g83adu2xkj5wiuecnllo06402, primary]
+08/07/2016 08:49:55.291 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_car
+08/07/2016 08:49:55.291 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, carlist_id]
+08/07/2016 08:49:55.291 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:49:55.291 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [uk_i092kxm86oesjpbhlyc17tvv0, fk_i092kxm86oesjpbhlyc17tvv0, fk_acxo6feumsq19qrr6i5yj6ypx]
+08/07/2016 08:49:55.298 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_rental
+08/07/2016 08:49:55.298 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [organization_id, rentallist_id]
+08/07/2016 08:49:55.299 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:49:55.299 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_br197ubk68e646ituts3isb6k, uk_br197ubk68e646ituts3isb6k, fk_91l32v42eammb81dkqb33undy]
+08/07/2016 08:49:55.306 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.organization_supplier
+08/07/2016 08:49:55.306 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [supplierlist_id, organization_id]
+08/07/2016 08:49:55.306 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:49:55.306 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_old49hc2bljolaiqo3igyf97g, fk_5k406afvt6a6s7s1nunfynlmv, uk_5k406afvt6a6s7s1nunfynlmv]
+08/07/2016 08:49:55.313 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.personaldocument
+08/07/2016 08:49:55.313 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, expirationdate, docnumber]
+08/07/2016 08:49:55.313 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.313 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.320 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.rental
+08/07/2016 08:49:55.320 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id, customer_id, car_id]
+08/07/2016 08:49:55.320 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw]
+08/07/2016 08:49:55.320 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_97y8fkheeyb97s0wss3mub8qi, fk_x2jr4ufrannouhfkaf81devw, primary]
+08/07/2016 08:49:55.326 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.supplier
+08/07/2016 08:49:55.326 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:49:55.326 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: [fk_oh51xhcp4bl4trivu5ydmv1c7]
+08/07/2016 08:49:55.326 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [fk_oh51xhcp4bl4trivu5ydmv1c7, primary]
+08/07/2016 08:49:55.332 [INFO][hbm2ddl.TableMetadata] HHH000261: Table found: rentalx.traffic
+08/07/2016 08:49:55.332 [INFO][hbm2ddl.TableMetadata] HHH000037: Columns: [id]
+08/07/2016 08:49:55.332 [INFO][hbm2ddl.TableMetadata] HHH000108: Foreign keys: []
+08/07/2016 08:49:55.332 [INFO][hbm2ddl.TableMetadata] HHH000126: Indexes: [primary]
+08/07/2016 08:49:55.334 [INFO][hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
+08/07/2016 08:49:55.943 [INFO][internal.AbstractBatchImpl] HHH000010: On release of batch it still contained JDBC statements
+08/07/2016 08:49:55.948 [INFO][support.GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@5025a98f: startup date [Fri Jul 08 08:49:54 BRT 2016]; root of context hierarchy
+08/07/2016 08:49:55.950 [INFO][jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'rentalXPU'

@@ -19,35 +19,29 @@ import com.rentalx.vehicle.repository.CarRepository;
 @ContextConfiguration(locations="file:WebContent/WEB-INF/application-context.xml")
 public class AccountRepositoryIntegrationTest {
 	
-	/*@Autowired
-	OrganizationRepository orgRepository;*/
+	@Autowired
+	OrganizationRepository orgRepository;
 	
 	@Autowired
 	CarRepository carRepository;
-/*	
+	
 	@Autowired
-	SupplierRepository supRepository;*/
+	SupplierRepository supRepository;
 	
 	@Test
 	public void createAccount (){	
 		
-		/*Organization org = new Organization();
+		Organization org = new Organization();
 		org.setName("Derik Org");
-		org.setContactInfo(new ContactInfo("Rua das Cove", "SJC"));*/
-		//Car car = new Car();
+		org.setContactInfo(new ContactInfo("Rua das Cove", "SJC"));
 		
-		//Car car = new Car(2016, "F250", "Ferrari");
-		Car car = new Car();
-		car.setCarYear(123123);
-		car.setModel("asdasd");
-		car.setBrand("qwewqe");
+		Car car = new Car(2016, "F250", "Ferrari");
 		
-		//car.setId(Long.valueOf(1));
 		car = carRepository.create(car);
-		//assertNotNull(car.getId());
-		//org.getCarList().add(car);
+		assertNotNull("O carro tem ID", car.getId());
+		org.getCarList().add(car);
 		
-		/*Supplier supplier = new Supplier("Embraer", new ContactInfo("Faria Lima", "SJC"));
+		Supplier supplier = new Supplier("Embraer", new ContactInfo("Faria Lima", "SJC"));
 		supRepository.create(supplier);
 		assertNotNull(supplier.getId());		
 		org.getSupplierList().add(supplier);
@@ -56,7 +50,7 @@ public class AccountRepositoryIntegrationTest {
 		
 		orgRepository.create(org);
 		
-		assertNotNull(org.getId());	*/	
+		assertNotNull(org.getId());
 	}
 	
 }
